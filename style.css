@@ -2,38 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 body {
-    box-sizing: border-box;
     font-family: "Comfortaa", sans-serif;
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
 }
 
-h2 {
-    margin: 0;
-}
 
-p {
-    margin: 0;
-}
-
-.swiper {
+.reviews-slider-widget.swiper {
     width: 1200px;
     padding-bottom: 30px;
 }
 
-.reviews .reviews-wrapper {
+.reviews-slider-widget .reviews-slider-widget-wrapper {
     display: flex;
     align-items: stretch;
 }
 
-.reviews .reviews-slide {
+.reviews-slider-widget .reviews-slider-widget-slide {
     display: flex;
     height: auto;
 }
 
-.reviews .reviews-slide .review-item {
+.reviews-slider-widget .reviews-slider-widget-slide .review-item {
     margin: 10px 25px;
     box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 18%);
     border-radius: 10px;
@@ -43,7 +31,7 @@ p {
     height: 100%;
 }
 
-.reviews .reviews-slide .review-item .client {
+.reviews-slider-widget .reviews-slider-widget-slide .review-item .client {
     padding: 20px 25px;
     display: flex;
     flex-direction: column;
@@ -51,25 +39,25 @@ p {
     color: #2e2e2e;
 }
 
-.reviews .reviews-slide .review-item .client .client-info {
+.reviews-slider-widget .reviews-slider-widget-slide .review-item .client .client-info {
     display: flex;
     justify-content: space-between;
 }
 
-.reviews .reviews-slide .review-item .client .client-info h2 {
+.reviews-slider-widget .reviews-slider-widget-slide .review-item .client .client-info h2 {
     font-size: 25px;
     font-weight: 500;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
 }
 
-.reviews .reviews-slide .review-item .client .client-results {
+.reviews-slider-widget .reviews-slider-widget-slide .review-item .client .client-results {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.reviews .reviews-slide .review-item .client .client-results h2 {
+.reviews-slider-widget .reviews-slider-widget-slide .review-item .client .client-results h2 {
     background: #fddeeb;
     color: #D91363;
     font-weight: bold;
@@ -80,25 +68,25 @@ p {
     width: fit-content;
 }
 
-.reviews .reviews-slide .review-item .client .client-quote h2 {
+.reviews-slider-widget .reviews-slider-widget-slide .review-item .client .client-quote h2 {
     font-size: 16px;
     line-height: 1.2;
     margin-bottom: 5px;
     font-weight: 900;
 }
 
-.reviews .reviews-slide .review-item .client .client-quote p {
+.reviews-slider-widget .reviews-slider-widget-slide .review-item .client .client-quote p {
     font-size: 14px;
     line-height: 1.2;
 }
 
-.reviews .reviews-slide .review-item .client p.product-type {
+.reviews-slider-widget .reviews-slider-widget-slide .review-item .client p.product-type {
     margin: 0;
     color: #D91363;
     font-weight: bold;
 }
 
-.reviews .reviews-slide .review-item .client a.product-link {
+.reviews-slider-widget .reviews-slider-widget-slide .review-item .client a.product-link {
     font-size: 16px;
     font-weight: bold;
     position: relative;
@@ -109,24 +97,24 @@ p {
     transition: 0.3s ease;
 }
 
-.reviews .reviews-slide .review-item .client a.product-link::after {
+.reviews-slider-widget .reviews-slider-widget-slide .review-item .client a.product-link::after {
     position: absolute;
     content: '→';
     padding-left: 5px;
     top: 0%;
 }
 
-.reviews .reviews-slide .review-item .client a.product-link:hover {
+.reviews-slider-widget .reviews-slider-widget-slide .review-item .client a.product-link:hover {
     color: #ff97c2;
     border-bottom: 1px solid #ff97c2;
 }
 
-.before-after-container {
+.reviews-slider-widget .before-after-container {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.dots.clickable {
+.reviews-slider-widget .dots.clickable {
     background: #fddeeb;
     padding: 0px 6px;
     font-weight: bold;
@@ -135,14 +123,14 @@ p {
     margin-left: 3px;
     cursor: pointer;
 }
-.swiper-button-next{
+.reviews-slider-widget .swiper-button-next{
     right: -5px;
 }
-.swiper-button-prev {
+.reviews-slider-widget .swiper-button-prev {
     left: -5px;
 }
 /* before after */
-.before-after-container {
+.reviews-slider-widget .before-after-container {
     position: relative;
     width: 100%;
     margin: 0 auto;
@@ -150,37 +138,37 @@ p {
     overflow: hidden;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.reviews-slider-widget .swiper-button-next,
+.reviews-slider-widget .swiper-button-prev {
     color: #464646;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.reviews-slider-widget .swiper-button-next:after,
+.reviews-slider-widget .swiper-button-prev:after {
     color: #d91363;
     font-size: 25px;
     font-weight: 900;
 }
 
-.before-image,
-.after-image {
+.reviews-slider-widget .before-image,
+.reviews-slider-widget .after-image {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.before-image img.ks-image,
-.after-image img.ks-image {
+.reviews-slider-widget .before-image img.ks-image,
+.reviews-slider-widget .after-image img.ks-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.after-image {
+.reviews-slider-widget .after-image {
     clip-path: inset(0 50% 0 0);
 }
 
-.slider {
+.reviews-slider-widget .slider {
     position: absolute;
     top: 0;
     left: 0;
@@ -190,7 +178,7 @@ p {
     cursor: pointer;
 }
 
-.slider-handle {
+.reviews-slider-widget .slider-handle {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -209,12 +197,12 @@ p {
     pointer-events: none;
 }
 
-.slider-handle::before {
+.reviews-slider-widget .slider-handle::before {
     content: "⟷";
 }
 
 
-.before-after-container::before {
+.reviews-slider-widget .before-after-container::before {
     content: "";
     position: absolute;
     top: 0;
@@ -226,11 +214,11 @@ p {
     pointer-events: none;
 }
 
-.before-after__slider-item {
+.reviews-slider-widget .before-after__slider-item {
     margin-top: 2.5rem;
 }
 
-.before-after__slider-item .before-after__text {
+.reviews-slider-widget.before-after__slider-item .before-after__text {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -239,15 +227,15 @@ p {
     margin: 0 auto;
 }
 
-.before-after__slider-item .before-after__text p:nth-of-type(2) {
+.reviews-slider-widget.before-after__slider-item .before-after__text p:nth-of-type(2) {
     font-weight: bold;
 }
 
-.slider-handle {
+.reviews-slider-widget.slider-handle {
     pointer-events: auto;
     cursor: grab;
 }
 
-.slider-handle:active {
+.reviews-slider-widget.slider-handle:active {
     cursor: grabbing;
 }

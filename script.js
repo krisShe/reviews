@@ -1,4 +1,4 @@
-const swiper = new Swiper('.reviews', {
+const swiper = new Swiper('.reviews-slider-widget', {
     direction: 'horizontal',
     navigation: {
         nextEl: '.swiper-button-next',
